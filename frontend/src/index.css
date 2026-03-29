@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    background-color: #fdfcf9;   /* cream-50 — warm off-white, not stark white */
+    color: #1e293b;              /* slate-800 */
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    min-height: 100vh;
+    scroll-behavior: smooth;
+  }
+
+  * {
+    @apply box-border;
+  }
+
+  ::-webkit-scrollbar { width: 6px; }
+  ::-webkit-scrollbar-track { @apply bg-slate-100; }
+  ::-webkit-scrollbar-thumb { @apply bg-slate-300 rounded-full; }
+}
+
+@layer components {
+  /* Legacy classes kept for now to avoid breaking but we are moving away from them */
+  .glass-card {
+    @apply bg-white border border-slate-200 rounded-2xl shadow-sm text-slate-800;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center gap-2 px-6 py-3 rounded-xl font-semibold
+           bg-navy-600 text-white
+           hover:bg-navy-500
+           transition-all duration-200 shadow-md shadow-navy-900/10
+           active:scale-95 cursor-pointer;
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center gap-2 px-6 py-3 rounded-xl font-semibold
+           bg-white border border-slate-200 text-slate-700
+           hover:bg-slate-50 transition-all duration-200 cursor-pointer;
+  }
+
+  .tab-active {
+    @apply bg-navy-600 text-white shadow-md shadow-navy-900/10;
+  }
+
+  .tab-inactive {
+    @apply text-slate-500 hover:text-slate-800 hover:bg-slate-50;
+  }
+}
+
+@layer utilities {
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-navy-600 to-forest-500;
+  }
+
+  .glow-brand {
+    box-shadow: 0 0 40px rgba(92, 139, 205, 0.15); /* navy-400 */
+  }
+
+  /* NEW TOKENS START HERE */
+  .card {
+     background: #ffffff; 
+     border: 1px solid #e2e8f0; 
+     border-radius: 16px; 
+     box-shadow: 0 1px 4px rgba(15,23,42,0.04), 0 4px 16px rgba(15,23,42,0.04); 
+  }
+  .card-sm {
+     background: #ffffff; 
+     border: 1px solid #e2e8f0; 
+     border-radius: 12px; 
+     box-shadow: 0 1px 3px rgba(15,23,42,0.05); 
+  }
+  .label {
+     font-size: 11px; 
+     font-weight: 600; 
+     letter-spacing: 0.08em; 
+     text-transform: uppercase; 
+     color: #64748b; 
+  }
+  .value-large {
+     font-size: 2rem; 
+     font-weight: 700; 
+     color: #0f172a; 
+     letter-spacing: -0.02em; 
+     line-height: 1.1; 
+  }
+  .value-medium {
+     font-size: 1.25rem; 
+     font-weight: 600; 
+     color: #1e293b; 
+     letter-spacing: -0.01em; 
+  }
+  .body-text {
+     font-size: 14px; 
+     font-weight: 400; 
+     color: #475569; 
+     line-height: 1.6; 
+  }
+  .display-heading {
+     font-family: 'Instrument Serif', serif; 
+     font-style: italic; 
+     letter-spacing: -0.02em; 
+  }
+}
+
+@keyframes slideIn {
+  from { opacity: 0; transform: translateX(24px); }
+  to { opacity: 1; transform: none; }
+}
+
+.animate-slide-in {
+  opacity: 0;
+  animation: slideIn 0.6s ease-out forwards;
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: none; }
+}
+
+.animate-fade-up {
+  opacity: 0;
+  animation: fadeUp 0.6s ease-out forwards;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(4px); }
+  to { opacity: 1; transform: none; }
+}
+
+.animate-fade-in {
+  opacity: 0;
+  animation: fadeIn 0.5s ease-out forwards;
+}
