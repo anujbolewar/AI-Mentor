@@ -2,9 +2,6 @@
 
 ### Your pocket-sized personalized financial strategist for the Indian marathon to FIRE.
 
-![Built With Claude API](https://img.shields.io/badge/Built%20With-Claude%20API-7c3aed?style=flat-square)
-![ET Gen AI Hackathon 2026](https://img.shields.io/badge/ET%20Gen%20AI%20Hackathon-2026-blue?style=flat-square)
-![PS 9 — AI Money Mentor](https://img.shields.io/badge/PS%209-AI%20Money%20Mentor-green?style=flat-square)
 
 AI Money Mentor transforms complex financial data into a hyper-personalized roadmap for Financial Independence, Retire Early (FIRE). By combining secure PDF portfolio analysis with real-time AI guidance, it helps salaried professionals bridge the gap between "earning well" and "planning well."
 
@@ -175,15 +172,7 @@ graph LR
 
 ## ⚙️ About This Project
 
-*   **Team**: 4 final-year B.Tech CS (AI/ML) students, YCCE Nagpur
-*   **Event**: ET Gen AI Hackathon 2026
-*   **Problem Statement**: PS 9 — AI Money Mentor
-*   **Build Time**: ~11 hours prototype
+
 
 Unlike generic chatbots, AI Money Mentor combines deterministic rule-based validation with generative insights. It won't just tell you "buy stocks"; it reads your specific CAMS statement, calculates your real-world tax liability, and gives you a mathematical reason for every recommendation.
 
-## ⚖️ License & Disclaimer
-
-MIT License.
-
-**Disclaimer**: This tool provides educational financial analysis based on user input and AI modeling. It is not SEBI-registered investment advice. Please consult a certified financial planner before making significant investment decisions.
