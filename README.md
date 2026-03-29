@@ -1,4 +1,4 @@
-# [AI Money Mentor](https://ai-money-mentor.demo)
+# AI Money Mentor
 
 ### Your pocket-sized personalized financial strategist for the Indian marathon to FIRE.
 
