@@ -22,6 +22,8 @@ const initProfile = {
 
 export default function FireModule() {
   const [profile, setProfile] = useState(initProfile);
+  const [step, setStep] = useState(1);
+  const [errors, setErrors] = useState({});
   const { 
     primaryGoal, 
     setFireResponse, 

@@ -17,6 +17,7 @@ export default function PortfolioModule() {
   const [loading, setLoading] = useState(false);
   const [result, setResult] = useState(null);
   const [isDemo, setIsDemo] = useState(false);
+  const fileInputRef = useRef(null);
   const { 
     riskProfile: globalRisk, 
     setPortfolioResponse, 
